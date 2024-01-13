@@ -1,0 +1,137 @@
+/* Style guide
+
+Colors
+Primary:
+violet: #7541c8
+blue grey: #48556a
+dark blue grey: #19212e
+white: #ffffff
+
+Neutrals:
+light grey: #cfcfcf
+light blue: #ecf2f8
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf2f8;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.testimonial-grid-container {
+    padding: 5% 3% 0;
+}
+
+.testimonial-1 {
+    background-color: #7541c8;
+    position: relative;
+    color:#ffffff;
+    z-index: 0;
+}
+
+.testimonial-2 {
+    background-color: #48556a;
+    color:#ffffff;
+
+}
+
+.testimonial-3 {
+    background-color: #ffffff;
+}
+
+.testimonial-4 {
+    background-color: #19212e;
+    color:#ffffff;
+}
+
+.testimonial-5 {
+    background-color:#ffffff;
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 1%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.quote-img {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    z-index: -1;
+}
+
+.testimonial-quote, .header-status-text {
+    color: #cfcfcf;
+
+}
+
+.attribution {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+
+    .testimonial-grid-container, .main-left, .top, .bottom{
+        display: flex;
+    }
+
+    .top, .bottom {
+        flex-basis: 50%;
+        justify-content: space-between;
+    }
+
+
+    .testimonial-1, .testimonial-4  {
+        flex-basis: 63%;
+
+    }
+
+    .testimonial-2, .testimonial-3  {
+        flex-basis: 35%;
+    }
+
+    .testimonial-5 {
+        flex-basis: 18%;
+    }
+
+    .main-left {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    .testimonial-grid-container {
+        margin: 0 auto;
+        justify-content: space-between;
+        max-width: 1440px;
+    }
+
+}
